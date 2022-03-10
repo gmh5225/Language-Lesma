@@ -6,6 +6,7 @@
 #include "Common/Utils.h"
 #include "Frontend/Lexer.h"
 #include "Frontend/Parser.h"
+#include "Backend/Analyzer.h"
 
 using namespace lesma;
 
@@ -48,9 +49,14 @@ int main(int argc, char **argv) {
         if (options->debug)
             print(DEBUG, "AST:\n{}", parser->getAST()->toString(0));
 
+        // Analyzer
+        TIMEIT("Analyzing",
+               auto analyzer = std::make_unique<Analyzer>(std::move(parser));
+               analyzer->Run();)
+
         // Codegen
         TIMEIT("Compiling",
-               auto codegen = std::make_unique<Codegen>(std::move(parser), options->file, options->jit, true);
+               auto codegen = std::make_unique<Codegen>(analyzer->getParser(), options->file, options->jit, true);
                codegen->Run();)
 
         // Optimization

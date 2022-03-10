@@ -60,6 +60,7 @@ set(COMMON_SOURCES
   src/Frontend/Parser.cpp
   src/Token/Token.cpp
   src/Backend/Codegen.cpp
+  src/Backend/Analyzer.cpp
   src/Symbol/SymbolTable.cpp
 )
 set(TARGET_SOURCES src/main.cpp)
