@@ -1,3 +1,28 @@
+## [0.4.6](https://github.com/alinalihassan/Lesma/compare/v0.4.5...v0.4.6) (2022-03-11)
+
+
+### Bug Fixes
+
+* Added support for parenthesis in expressions ([485f2cf](https://github.com/alinalihassan/Lesma/commit/485f2cffb266719e4dcaa43f90df2b7e9be835be))
+
+## [0.4.5](https://github.com/alinalihassan/Lesma/compare/v0.4.4...v0.4.5) (2022-03-11)
+
+
+### Bug Fixes
+
+* Fixed import incorrect span, fixed errors in import not being catched ([a0088a9](https://github.com/alinalihassan/Lesma/commit/a0088a934dd25c22d06ea91d4e1927a33bf26b7c))
+* Fixed memory leak due to unused modules ([4d2282f](https://github.com/alinalihassan/Lesma/commit/4d2282fb71dfa2ff668b3759b28e737339508d13))
+* Fixed memory leak from CLIOptions ([1693df5](https://github.com/alinalihassan/Lesma/commit/1693df5caa652683de5e0c4eb07f18f45335cff9))
+* Fixed Target Machine leak ([b246e06](https://github.com/alinalihassan/Lesma/commit/b246e06a3dbf1cffb5ea1991018f52bc223b5519))
+* Function call based on parameters ([b304917](https://github.com/alinalihassan/Lesma/commit/b3049173e0799e035eb351ecef0de3921d1977a2))
+
+## [0.4.4](https://github.com/alinalihassan/Lesma/compare/v0.4.3...v0.4.4) (2022-03-10)
+
+
+### Bug Fixes
+
+* Fixed function parameters not being usable ([086a231](https://github.com/alinalihassan/Lesma/commit/086a231edcf57d4850bec8ff930918749b84bc26))
+
 ## [0.4.3](https://github.com/alinalihassan/Lesma/compare/v0.4.2...v0.4.3) (2022-03-10)
 
 
