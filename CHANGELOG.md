@@ -1,3 +1,17 @@
+## [0.4.9](https://github.com/alinalihassan/Lesma/compare/v0.4.8...v0.4.9) (2022-03-14)
+
+
+### Bug Fixes
+
+* Added line continuation '\' and newline ignore in paranthesis ([73d0134](https://github.com/alinalihassan/Lesma/commit/73d013470aabe0922fc413afc6db8b1ec86c7352))
+
+## [0.4.8](https://github.com/alinalihassan/Lesma/compare/v0.4.7...v0.4.8) (2022-03-12)
+
+
+### Bug Fixes
+
+* Small memory improvements ([e48b4ca](https://github.com/alinalihassan/Lesma/commit/e48b4ca7d7748dddff537f8af594e339cb30d25c))
+
 ## [0.4.7](https://github.com/alinalihassan/Lesma/compare/v0.4.6...v0.4.7) (2022-03-12)
 
 
