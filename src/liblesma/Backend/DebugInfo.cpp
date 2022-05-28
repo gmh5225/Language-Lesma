@@ -2,7 +2,7 @@
 
 using namespace lesma;
 
-DebugInfo::DebugInfo(llvm::Module *module, const std::string& path) {
+DebugInfo::DebugInfo(llvm::Module *module, const std::string &path) {
     Builder = new llvm::DIBuilder(*module);
     auto filename = path.substr(path.find_last_of("/\\") + 1);
     auto directory = path.substr(0, path.find_last_of("/\\"));
@@ -25,7 +25,7 @@ std::string getTypeName(llvm::Type *type) {
 }
 
 void DebugInfo::insertType(llvm::DIType *type) {
-    types.insert(std::pair<std::string, llvm::DIType*>(type->getName(), type));
+    types.insert(std::pair<std::string, llvm::DIType *>(type->getName(), type));
 }
 
 llvm::DIType *DebugInfo::createNewType(llvm::Type *type) {

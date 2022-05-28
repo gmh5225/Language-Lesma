@@ -1309,7 +1309,7 @@ int Codegen::FindIndexInFields(SymbolType *_struct, const std::string &field) {
     return val;
 }
 
-DISubprogram *Codegen::DebugCreateSubprogram(FunctionType* FT, std::pair<unsigned int, unsigned int> loc, const std::string& name) {
+DISubprogram *Codegen::DebugCreateSubprogram(FunctionType *FT, std::pair<unsigned int, unsigned int> loc, const std::string &name) {
     DIFile *Unit = DebugInfo->Builder->createFile(DebugInfo->CU->getFilename(),
                                                   DebugInfo->CU->getDirectory());
     DIScope *FContext = Unit;
@@ -1319,7 +1319,7 @@ DISubprogram *Codegen::DebugCreateSubprogram(FunctionType* FT, std::pair<unsigne
     return SP;
 }
 
-DILocalVariable *Codegen::DebugCreateVariable(Value* ptr, llvm::Type* type, std::pair<unsigned int, unsigned int> loc, const std::string& name) {
+DILocalVariable *Codegen::DebugCreateVariable(Value *ptr, llvm::Type *type, std::pair<unsigned int, unsigned int> loc, const std::string &name) {
     DIFile *Unit = DebugInfo->Builder->createFile(DebugInfo->CU->getFilename(),
                                                   DebugInfo->CU->getDirectory());
     DIScope *SP = Unit;
@@ -1329,7 +1329,7 @@ DILocalVariable *Codegen::DebugCreateVariable(Value* ptr, llvm::Type* type, std:
     return Var;
 }
 
-DILocalVariable *Codegen::DebugCreateParam(Value* ptr, llvm::Type* type, std::pair<unsigned int, unsigned int> loc, const std::string& name, unsigned int argNo) {
+DILocalVariable *Codegen::DebugCreateParam(Value *ptr, llvm::Type *type, std::pair<unsigned int, unsigned int> loc, const std::string &name, unsigned int argNo) {
     DIFile *Unit = DebugInfo->Builder->createFile(DebugInfo->CU->getFilename(),
                                                   DebugInfo->CU->getDirectory());
     DIScope *SP = Unit;
